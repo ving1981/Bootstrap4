@@ -13,6 +13,7 @@
     <title>Guia Hoteles</title>
   </head>
   <body>
+
   	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   		<a class="navbar-brand" href="#">Hoteles</a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,92 +29,119 @@
   			</ul>
   		</div>
   	</nav>
+
   	<div class="jumbotron">
   		<h1>Hoteles</h1>
   	</div>
+
   	<div class="container">
-  		<nav aria-label="breadcrumb">
-  			<ol class="breadcrumb">
-  				<li class="breadcrumb-item"><a href="./index.html"">Home</a></li>
-  				<li class="breadcrumb-item active" aria-current="page">Precios</li>
-  			</ol>
-  			
-  		</nav>
-
-  		<div class="table-responsive">
-	  		<table class="table table-striped">
-	  			<thead class="thead-dark">
-	  				<th>Calidad</th>
-	  				<th>Pinamar</th>
-	  				<th>Mar de Plata</th>
-	  				<th>San Clemente</th>
-	  				<th>Satna Teresita</th>  				
-	  			</thead>
-	  			<tbody>
-	  				<tr>
-	  					<td><span class="oi oi-star"></span></td>
-	  					<td>$100</td>
-	  					<td>$120</td>
-	  					<td>$150</td>
-	  					<td>$180</td>
-	  				</tr>
-	  				<tr>
-	  					<td><span class="oi oi-star"></span>
-	  					<span class="oi oi-star"></span></td>
-	  					<td>$200</td>
-	  					<td>$220</td>
-	  					<td>$250</td>
-	  					<td>$280</td>
-	  				</tr>
-	  				<tr>
-	  					<td><span class="oi oi-star"></span>
-	  					<span class="oi oi-star"></span>
-	  					<span class="oi oi-star"></span>	</td>
-	  					<td>$300</td>
-	  					<td>$320</td>
-	  					<td>$350</td>
-	  					<td>$380</td>
-	  				</tr>
-	  				<tr>
-	  					<td><span class="oi oi-star"></span>
-	  					<span class="oi oi-star"></span>
-	  					<span class="oi oi-star"></span>
-	  					<span class="oi oi-star"></span></td>
-	  					<td>$400</td>
-	  					<td>$420</td>
-	  					<td>$450</td>
-	  					<td>$480</td>
-	  				</tr>
-	  				<tr>
-	  					<td><span class="oi oi-star"></span>
-	  					<span class="oi oi-star"></span>
-	  					<span class="oi oi-star"></span>
-	  					<span class="oi oi-star"></span>
-	  					<span class="oi oi-star"></span></td>
-	  					<td>$500</td>
-	  					<td>$520</td>
-	  					<td>$550</td>
-	  					<td>$580</td>
-	  				</tr>
-	  			</tbody>	
-	  		</table>
+  		<div class="container">
+	  		<nav aria-label="breadcrumb">
+	  			<ol class="breadcrumb">
+	  				<li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+	  				<li class="breadcrumb-item active" aria-current="page">Precios</li>
+	  			</ol>
+	  		</nav>
 	  	</div>
 
-	  	<div class="d-flex justify-content-center">
-	  		<div class="card" style="width: 18rem;">
-	  			<div class="card-header" style="background-color: olive;">
-	  				Tarjetas aceptadas
-	  			</div>
-	  			<ul class="list-group list-group-flush">
-	  				<li class="list-group-item">Tarjeta básica</li>
-	  				<li class="list-group-item">Tarjeta VIP</li>
-	  				<li class="list-group-item">Tarjeta Black</li>
-	  				
-	  			</ul>
-	  		</div>
+  		<ul class="nav nav-pills" id="myTab" role="tablist">
+  			<li class="nav-item">
+  				<a class="nav-link active" id="compara-tab" data-bs-toggle="pill" href="#compara" role="tab" aria-controls="compara" aria-selected="true">Compara</a>
+  			</li>
+
+  			<li class="nav-item">
+  				<a class="nav-link" id="tarjetas-tab" data-bs-toggle="pill" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a>
+  			</li>
+
+  			<li class="nav-item">
+  				<a class="nav-link" id="comentarios-tab" data-bs-toggle="pill" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a>
+  			</li>
+  		</ul>
+
+  		<div class="tab-content" id="myTabContent">
+
+  			<div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+  				<div class="table-responsive">
+  					<table class="table table-striped">
+			  			<thead class="thead-dark">
+			  				<th>Calidad</th>
+			  				<th>Pinamar</th>
+			  				<th>Mar de Plata</th>
+			  				<th>San Clemente</th>
+			  				<th>Satna Teresita</th>  				
+			  			</thead>
+			  			<tbody>
+			  				<tr>
+			  					<td><span class="oi oi-star"></span></td>
+			  					<td>$100</td>
+			  					<td>$120</td>
+			  					<td>$150</td>
+			  					<td>$180</td>
+			  				</tr>
+			  				<tr>
+			  					<td><span class="oi oi-star"></span>
+			  					<span class="oi oi-star"></span></td>
+			  					<td>$200</td>
+			  					<td>$220</td>
+			  					<td>$250</td>
+			  					<td>$280</td>
+			  				</tr>
+			  				<tr>
+			  					<td><span class="oi oi-star"></span>
+			  					<span class="oi oi-star"></span>
+			  					<span class="oi oi-star"></span>	</td>
+			  					<td>$300</td>
+			  					<td>$320</td>
+			  					<td>$350</td>
+			  					<td>$380</td>
+			  				</tr>
+			  				<tr>
+			  					<td><span class="oi oi-star"></span>
+			  					<span class="oi oi-star"></span>
+			  					<span class="oi oi-star"></span>
+			  					<span class="oi oi-star"></span></td>
+			  					<td>$400</td>
+			  					<td>$420</td>
+			  					<td>$450</td>
+			  					<td>$480</td>
+			  				</tr>
+			  				<tr>
+			  					<td><span class="oi oi-star"></span>
+			  					<span class="oi oi-star"></span>
+			  					<span class="oi oi-star"></span>
+			  					<span class="oi oi-star"></span>
+			  					<span class="oi oi-star"></span></td>
+			  					<td>$500</td>
+			  					<td>$520</td>
+			  					<td>$550</td>
+			  					<td>$580</td>
+			  				</tr>
+			  			</tbody>	
+		  			</table>
+  				</div>
+  			</div>
+	  	
+
+		  	<div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+		  		<div class="d-flex justify-content-center">
+			  		<div class="card" style="width: 18rem;">
+			  			<div class="card-header" style="background-color: olive;">
+			  				Tarjetas aceptadas
+			  			</div>
+			  			<ul class="list-group list-group-flush">
+			  				<li class="list-group-item">Tarjeta básica</li>
+			  				<li class="list-group-item">Tarjeta VIP</li>
+			  				<li class="list-group-item">Tarjeta Black</li>
+			  			</ul>
+			  		</div>
+		  		</div>
+		  	</div>
+
+		  	<div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">Comentarios</div>
+ 	
 	  	</div>
-  		
   	</div>
+
   	<footer>
   		<div class="row">
   			<div class="col-sm-4">
@@ -122,6 +150,7 @@
 	  			<a href="http://www.instagram.com">Instagram</a>
 	  			<a href="http://www.google.com">Google</a>
 	  		</div>
+
 	  		<div class="col-sm-4">
 	  			<address>
 	  				Tucuman 834, CABA, Argentina
@@ -129,6 +158,7 @@
 	  				contacto@guiahoteles.com
 	  			</address>
 	  		</div>
+
 	  		<div class="col-sm-4 d-flex flex-column align-items-end">
 	  			<a href="http://www.facebook.com">Negocios</a>
 	  			<a href="http://www.twitter.com">Precios</a>
@@ -143,7 +173,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/popper.js/dist/popper.min.js"></script>
+		<script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
   </body>
