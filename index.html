@@ -1,4 +1,4 @@
-<!doctype html>
+	<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -41,18 +41,33 @@
 
   		<div class="row">
   			<div class="col-sm-4">
+  				<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Como funciona?</button>
+  			</div>
+
+  			<div class="col-sm-4">
+  				<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">¿Donde puedo reservar?</button>
+  			</div>
+
+  			<div class="col-sm-4">
+  				<button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Como pago?</button>
+  			</div>
+  			
+  		</div>
+
+  		<div class="row">
+  			<div class="col-sm-4 collapse multi-collapse" id="funciona">
   				<p>
   					<h3>¿Como funciona?</h3>
   					<p>Busca los hoteles de acuerdo a tu preferencia</p>
   				</p>
   			</div>
-  			<div class="col-sm-4">
+  			<div class="col-sm-4 collapse multi-collapse" id="reserva">
   				<p>
   					<h3>¿Dcon puedo reservar?</h3>
   					<p>Elige la ciudad que te interes y luego realiza la reserva con tus datos</p>
   				</p>
   			</div>
-  			<div class="col-sm-4">
+  			<div class="col-sm-4 collapse multi-collapse" id="pago">
   				<p>
   					<h3>¿Como pago?</h3>
   					<p>Utilizá tu tarjeta favorita</p>
