@@ -85,7 +85,7 @@
   					<p class="card-text">Hotel ubicado en pleno centro de la ciudad</p>
   				</div>
   				<div>
-  					<button class="btn btn-primary btn-reserva">Reservar</button>
+  					<button class="btn btn-primary btn-reserva" data-bs-toggle="popover" title="Promociones" data-content="Consulta las promociones">Reservar</button>
   				</div>
   			</div>
 
@@ -233,6 +233,7 @@ Tucuman 834, CABA, Argentina</p>
     <script>
     	$(function(){
     		$("[data-toggle='tooltip']").tooltip();
+    		$("[data-toggle='popover']").popover();
     	});
     </script>
 
