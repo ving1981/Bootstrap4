@@ -79,7 +79,7 @@
 
   			<div class="card card-hotel d-flex flex-column justify-content-between">
   				<div class="card-body">
-  					<h5 class="card-title">Hotel Radisson</h5>
+  					<h5 class="card-title" data-bs-toggle="tooltip" data-placement="top" title="Las primera reservas tienen 10% de descuento">Hotel Radisson</h5>
   					<h6 class="card-subtitle text-muted">CDMX</h6>
   					<img class="card-img-top" src="image/hotel_radisson.jpg" alt="Responsive img">
   					<p class="card-text">Hotel ubicado en pleno centro de la ciudad</p>
@@ -228,8 +228,13 @@ Tucuman 834, CABA, Argentina</p>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-	<script src="node_modules/popper.js/dist/popper.min.js"></script>
+		<script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+    	$(function(){
+    		$("[data-toggle='tooltip']").tooltip();
+    	});
+    </script>
 
   </body>
 </html>
